@@ -4,6 +4,13 @@ A lightweight, fully interactive **Memory Match Game** built using **React**, **
 
 ---
 
+## 🌐 Live Demo
+
+The application is deployed and running live on **Vercel**. You can play the game directly in your browser here:
+👉 **[Play Memory Card Game](https://vercel.app)**
+
+---
+
 ## 🚀 Features
 
 - **Dynamic Score Tracking:** Keeps real-time tabs on your current score and total moves.
