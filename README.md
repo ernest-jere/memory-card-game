@@ -1,16 +1,61 @@
-# React + Vite
+# 🍎 Fruit Memory Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A lightweight, fully interactive **Memory Match Game** built using **React**, **Vite**, and **Tailwind CSS**. Test your memory by matching pairs of delicious fruits in the fewest moves possible!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- **Dynamic Score Tracking:** Keeps real-time tabs on your current score and total moves.
+- **Custom Hook Architecture:** Core game mechanics (shuffling, checking matches, resets) are efficiently managed via a custom `useGameLogic` hook.
+- **Modular Components:** Built with reusable React components (`Card`, `GameHeader`, `WinMessage`).
+- **Responsive Layout:** Fast, sleek card grid designed via utility-first CSS styling.
+- **Instant Restart:** Quickly reset the game at any time or restart immediately after winning.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The project follows a clean, component-driven structure:
+
+```text
+src/
+├── components/
+│   ├── Card.jsx          # Individual card flip and rendering
+│   ├── GameHeader.jsx    # Displays Score, Moves, and the Reset button
+│   └── WinMessage.jsx    # Pop-up notification triggered upon game completion
+├── hooks/
+│   └── useGameLogic.js   # Custom hook managing game arrays, states, and matchmaking
+└── App.jsx               # Main assembly and entry layout
+```
+
+---
+
+## ⚡ Getting Started (Local Development)
+
+To run this project locally on your machine, follow these steps:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com
+cd memory-card
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run the development server
+```bash
+npm run dev
+```
+Open your browser and navigate to `http://localhost:5173` to play!
+
+---
+
+## 📦 Tech Stack
+
+- **Framework:** React 18+
+- **Build Tool:** Vite (Optimized for ultra-fast local reloads)
+- **Styling:** Tailwind CSS
